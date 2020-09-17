@@ -84,7 +84,7 @@ def test_app_route_decoractors_module1():
         index_exists
     ), "The `index.html` template does not exist in the `templates` folder."
 
-    jobs_function = "jobs" in dir(app)
+    jobs_function = "job" in dir(app)
     assert jobs_function, "Have you created the `jobs` function?"
 
     rules = list_routes(app.app)
